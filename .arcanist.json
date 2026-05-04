@@ -1,0 +1,25 @@
+{
+  "appRuntime": {
+    "kind": "web",
+    "runner": "docker",
+    "entry": {
+      "type": "compose",
+      "files": ["docker-compose.yml"],
+      "service": "excalidraw"
+    },
+    "url": {
+      "hostPort": 3000,
+      "path": "/"
+    },
+    "ready": {
+      "path": "/",
+      "timeoutSeconds": 300
+    },
+    "open": {
+      "path": "/"
+    },
+    "e2e": {
+      "testCommand": "yarn test:app --run"
+    }
+  }
+}
