@@ -1,4 +1,4 @@
-import { ORIG_ID } from "@excalidraw/common";
+import { DEFAULT_GRID_SIZE, ORIG_ID } from "@excalidraw/common";
 
 import { Excalidraw } from "../index";
 import { API } from "../tests/helpers/api";
@@ -9,7 +9,10 @@ import {
   render,
 } from "../tests/test-utils";
 
-import { actionDuplicateSelection } from "./actionDuplicateSelection";
+import {
+  actionDuplicateSelection,
+  actionDuplicateSelectionToRight,
+} from "./actionDuplicateSelection";
 
 const { h } = window;
 
@@ -525,6 +528,47 @@ describe("actionDuplicateSelection", () => {
         { [ORIG_ID]: ellipse.id, groupIds: ["B"], selected: true },
         { id: rect1.id, groupIds: ["A", "B"] },
         { id: rect2.id, groupIds: ["A", "B"] },
+      ]);
+    });
+  });
+
+  describe("duplicating selection to the right", () => {
+    it("offsets duplicated elements horizontally and selects the new copies", () => {
+      const rectangle = API.createElement({
+        type: "rectangle",
+        x: 10,
+        y: 20,
+      });
+      const ellipse = API.createElement({
+        type: "ellipse",
+        x: 80,
+        y: 40,
+      });
+
+      API.setElements([rectangle, ellipse]);
+      API.setSelectedElements([rectangle, ellipse]);
+
+      act(() => {
+        h.app.actionManager.executeAction(actionDuplicateSelectionToRight);
+      });
+
+      expect(h.elements).toHaveLength(4);
+
+      assertElements(h.elements, [
+        { id: rectangle.id, x: rectangle.x, y: rectangle.y },
+        {
+          [ORIG_ID]: rectangle.id,
+          x: rectangle.x + DEFAULT_GRID_SIZE / 2,
+          y: rectangle.y,
+          selected: true,
+        },
+        { id: ellipse.id, x: ellipse.x, y: ellipse.y },
+        {
+          [ORIG_ID]: ellipse.id,
+          x: ellipse.x + DEFAULT_GRID_SIZE / 2,
+          y: ellipse.y,
+          selected: true,
+        },
       ]);
     });
   });

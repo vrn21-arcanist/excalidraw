@@ -223,7 +223,9 @@ export default defineConfig(({ mode }) => {
               },
             },
           ],
-          maximumFileSizeToCacheInBytes: 2.3 * 1024 ** 2, // 2.3MB
+          // Docker production builds currently emit a ~2.57 MiB main bundle.
+          // Keep it in the precache so the published preview/runtime path remains usable.
+          maximumFileSizeToCacheInBytes: 3 * 1024 ** 2, // 3MB
         },
         manifest: {
           short_name: "Excalidraw",

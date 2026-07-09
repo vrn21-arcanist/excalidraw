@@ -134,6 +134,7 @@ describe("contextMenu element", () => {
       "sendToBack",
       "bringToFront",
       "duplicateSelection",
+      "duplicateSelectionToRight",
       "hyperlink",
       "copyElementLink",
       "toggleElementLock",
@@ -229,6 +230,7 @@ describe("contextMenu element", () => {
       "sendToBack",
       "bringToFront",
       "duplicateSelection",
+      "duplicateSelectionToRight",
       "toggleElementLock",
     ];
 
@@ -287,6 +289,7 @@ describe("contextMenu element", () => {
       "sendToBack",
       "bringToFront",
       "duplicateSelection",
+      "duplicateSelectionToRight",
       "toggleElementLock",
     ];
 
@@ -453,6 +456,25 @@ describe("contextMenu element", () => {
       ...rect2
     } = h.elements[1];
     expect(rect1).toEqual(rect2);
+  });
+
+  it("selecting 'Duplicate to the right' in context menu duplicates element to the right and selects the copy", () => {
+    UI.clickTool("rectangle");
+    mouse.down(0, 0);
+    mouse.up(10, 10);
+
+    fireEvent.contextMenu(GlobalTestState.interactiveCanvas, {
+      button: 2,
+      clientX: 3,
+      clientY: 3,
+    });
+    const contextMenu = UI.queryContextMenu();
+    fireEvent.click(queryByText(contextMenu!, "Duplicate to the right")!);
+
+    expect(h.elements).toHaveLength(2);
+    expect(h.elements[1].x).toBe(h.elements[0].x + 10);
+    expect(h.elements[1].y).toBe(h.elements[0].y);
+    expect(h.state.selectedElementIds).toEqual({ [h.elements[1].id]: true });
   });
 
   it("selecting 'Send backward' in context menu sends element backward", () => {
