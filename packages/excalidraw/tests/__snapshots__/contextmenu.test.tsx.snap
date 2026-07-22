@@ -848,6 +848,38 @@ exports[`contextMenu element > right-clicking on a group should select whole gro
         },
       },
       {
+        "icon": <svg
+          aria-hidden="true"
+          className=""
+          fill="none"
+          focusable="false"
+          role="img"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          viewBox="0 0 20 20"
+        >
+          <g
+            strokeWidth="1.25"
+          >
+            <path
+              d="M14.375 6.458H8.958a2.5 2.5 0 0 0-2.5 2.5v5.417a2.5 2.5 0 0 0 2.5 2.5h5.417a2.5 2.5 0 0 0 2.5-2.5V8.958a2.5 2.5 0 0 0-2.5-2.5Z"
+            />
+            <path
+              clipRule="evenodd"
+              d="M11.667 3.125c.517 0 .986.21 1.325.55.34.338.55.807.55 1.325v1.458H8.333c-.485 0-.927.185-1.26.487-.343.312-.57.75-.609 1.24l-.005 5.357H5a1.87 1.87 0 0 1-1.326-.55 1.87 1.87 0 0 1-.549-1.325V5c0-.518.21-.987.55-1.326.338-.34.807-.549 1.325-.549h6.667Z"
+            />
+          </g>
+        </svg>,
+        "keyTest": [Function],
+        "label": "labels.duplicateSelectionToRight",
+        "name": "duplicateSelectionToRight",
+        "perform": [Function],
+        "trackEvent": {
+          "category": "element",
+        },
+      },
+      {
         "icon": [Function],
         "keyTest": [Function],
         "label": [Function],
@@ -2406,6 +2438,304 @@ exports[`contextMenu element > selecting 'Delete' in context menu deletes elemen
       "updated": {},
     },
     "id": "id4",
+  },
+]
+`;
+
+exports[`contextMenu element > selecting 'Duplicate to the right' in context menu duplicates element to the right and selects the copy > [end of test] appState 1`] = `
+{
+  "activeEmbeddable": null,
+  "activeLockedId": null,
+  "activeTool": {
+    "customType": null,
+    "fromSelection": false,
+    "lastActiveTool": null,
+    "locked": false,
+    "type": "selection",
+  },
+  "bindMode": "orbit",
+  "bindingPreference": "enabled",
+  "boxSelectionMode": "contain",
+  "collaborators": Map {},
+  "contextMenu": null,
+  "croppingElementId": null,
+  "currentHoveredFontFamily": null,
+  "currentItemArrowType": "round",
+  "currentItemBackgroundColor": "transparent",
+  "currentItemEndArrowhead": "arrow",
+  "currentItemFillStyle": "solid",
+  "currentItemFontFamily": 5,
+  "currentItemFontSize": 20,
+  "currentItemOpacity": 100,
+  "currentItemRoughness": 1,
+  "currentItemRoundness": "sharp",
+  "currentItemStartArrowhead": null,
+  "currentItemStrokeColor": "#1e1e1e",
+  "currentItemStrokeStyle": "solid",
+  "currentItemStrokeWidth": 2,
+  "currentItemTextAlign": "left",
+  "cursorButton": "up",
+  "defaultSidebarDockedPreference": false,
+  "editingFrame": null,
+  "editingGroupId": null,
+  "editingTextElement": null,
+  "elementsToHighlight": null,
+  "errorMessage": null,
+  "exportBackground": true,
+  "exportEmbedScene": false,
+  "exportScale": 1,
+  "exportWithDarkMode": false,
+  "fileHandle": null,
+  "followedBy": Set {},
+  "frameRendering": {
+    "clip": true,
+    "enabled": true,
+    "name": true,
+    "outline": true,
+  },
+  "frameToHighlight": null,
+  "gridModeEnabled": false,
+  "gridSize": 20,
+  "gridStep": 5,
+  "height": 100,
+  "hoveredElementIds": {},
+  "isBindingEnabled": true,
+  "isCropping": false,
+  "isLoading": false,
+  "isMidpointSnappingEnabled": true,
+  "isResizing": false,
+  "isRotating": false,
+  "lastPointerDownWith": "mouse",
+  "lockedMultiSelections": {},
+  "multiElement": null,
+  "name": "Untitled-201933152653",
+  "newElement": null,
+  "objectsSnapModeEnabled": false,
+  "offsetLeft": 20,
+  "offsetTop": 10,
+  "openDialog": null,
+  "openMenu": null,
+  "openPopup": null,
+  "openSidebar": null,
+  "originSnapOffset": null,
+  "penDetected": false,
+  "penMode": false,
+  "preferredSelectionTool": {
+    "initialized": true,
+    "type": "selection",
+  },
+  "previousSelectedElementIds": {},
+  "resizingElement": null,
+  "scrollX": 0,
+  "scrollY": 0,
+  "scrolledOutside": false,
+  "searchMatches": null,
+  "selectedElementIds": {
+    "id3": true,
+  },
+  "selectedElementsAreBeingDragged": false,
+  "selectedGroupIds": {},
+  "selectedLinearElement": null,
+  "selectionElement": null,
+  "shouldCacheIgnoreZoom": false,
+  "showHyperlinkPopup": false,
+  "showWelcomeScreen": true,
+  "snapLines": [],
+  "stats": {
+    "open": false,
+    "panels": 3,
+  },
+  "suggestedBinding": null,
+  "theme": "light",
+  "toast": null,
+  "userToFollow": null,
+  "viewBackgroundColor": "#ffffff",
+  "viewModeEnabled": false,
+  "width": 200,
+  "zenModeEnabled": false,
+  "zoom": {
+    "value": 1,
+  },
+}
+`;
+
+exports[`contextMenu element > selecting 'Duplicate to the right' in context menu duplicates element to the right and selects the copy > [end of test] element 0 1`] = `
+{
+  "angle": 0,
+  "backgroundColor": "transparent",
+  "boundElements": null,
+  "customData": undefined,
+  "fillStyle": "solid",
+  "frameId": null,
+  "groupIds": [],
+  "height": 10,
+  "id": "id0",
+  "index": "a0",
+  "isDeleted": false,
+  "link": null,
+  "locked": false,
+  "opacity": 100,
+  "roughness": 1,
+  "roundness": null,
+  "seed": 1278240551,
+  "strokeColor": "#1e1e1e",
+  "strokeStyle": "solid",
+  "strokeWidth": 2,
+  "type": "rectangle",
+  "updated": 1,
+  "version": 3,
+  "versionNonce": 401146281,
+  "width": 10,
+  "x": -20,
+  "y": -10,
+}
+`;
+
+exports[`contextMenu element > selecting 'Duplicate to the right' in context menu duplicates element to the right and selects the copy > [end of test] element 1 1`] = `
+{
+  "angle": 0,
+  "backgroundColor": "transparent",
+  "boundElements": null,
+  "customData": undefined,
+  "fillStyle": "solid",
+  "frameId": null,
+  "groupIds": [],
+  "height": 10,
+  "id": "id3",
+  "index": "a1",
+  "isDeleted": false,
+  "link": null,
+  "locked": false,
+  "opacity": 100,
+  "roughness": 1,
+  "roundness": null,
+  "seed": 1014066025,
+  "strokeColor": "#1e1e1e",
+  "strokeStyle": "solid",
+  "strokeWidth": 2,
+  "type": "rectangle",
+  "updated": 1,
+  "version": 5,
+  "versionNonce": 400692809,
+  "width": 10,
+  "x": -10,
+  "y": -10,
+}
+`;
+
+exports[`contextMenu element > selecting 'Duplicate to the right' in context menu duplicates element to the right and selects the copy > [end of test] number of elements 1`] = `2`;
+
+exports[`contextMenu element > selecting 'Duplicate to the right' in context menu duplicates element to the right and selects the copy > [end of test] number of renders 1`] = `6`;
+
+exports[`contextMenu element > selecting 'Duplicate to the right' in context menu duplicates element to the right and selects the copy > [end of test] redo stack 1`] = `[]`;
+
+exports[`contextMenu element > selecting 'Duplicate to the right' in context menu duplicates element to the right and selects the copy > [end of test] undo stack 1`] = `
+[
+  {
+    "appState": AppStateDelta {
+      "delta": Delta {
+        "deleted": {
+          "selectedElementIds": {
+            "id0": true,
+          },
+        },
+        "inserted": {
+          "selectedElementIds": {},
+        },
+      },
+    },
+    "elements": {
+      "added": {},
+      "removed": {
+        "id0": {
+          "deleted": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "customData": undefined,
+            "fillStyle": "solid",
+            "frameId": null,
+            "groupIds": [],
+            "height": 10,
+            "index": "a0",
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#1e1e1e",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "rectangle",
+            "version": 3,
+            "width": 10,
+            "x": -20,
+            "y": -10,
+          },
+          "inserted": {
+            "isDeleted": true,
+            "version": 2,
+          },
+        },
+      },
+      "updated": {},
+    },
+    "id": "id2",
+  },
+  {
+    "appState": AppStateDelta {
+      "delta": Delta {
+        "deleted": {
+          "selectedElementIds": {
+            "id3": true,
+          },
+        },
+        "inserted": {
+          "selectedElementIds": {
+            "id0": true,
+          },
+        },
+      },
+    },
+    "elements": {
+      "added": {},
+      "removed": {
+        "id3": {
+          "deleted": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "customData": undefined,
+            "fillStyle": "solid",
+            "frameId": null,
+            "groupIds": [],
+            "height": 10,
+            "index": "a1",
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#1e1e1e",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "rectangle",
+            "version": 5,
+            "width": 10,
+            "x": -10,
+            "y": -10,
+          },
+          "inserted": {
+            "isDeleted": true,
+            "version": 4,
+          },
+        },
+      },
+      "updated": {},
+    },
+    "id": "id5",
   },
 ]
 `;
@@ -5511,6 +5841,38 @@ exports[`contextMenu element > shows 'Group selection' in context menu for multi
         },
       },
       {
+        "icon": <svg
+          aria-hidden="true"
+          className=""
+          fill="none"
+          focusable="false"
+          role="img"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          viewBox="0 0 20 20"
+        >
+          <g
+            strokeWidth="1.25"
+          >
+            <path
+              d="M14.375 6.458H8.958a2.5 2.5 0 0 0-2.5 2.5v5.417a2.5 2.5 0 0 0 2.5 2.5h5.417a2.5 2.5 0 0 0 2.5-2.5V8.958a2.5 2.5 0 0 0-2.5-2.5Z"
+            />
+            <path
+              clipRule="evenodd"
+              d="M11.667 3.125c.517 0 .986.21 1.325.55.34.338.55.807.55 1.325v1.458H8.333c-.485 0-.927.185-1.26.487-.343.312-.57.75-.609 1.24l-.005 5.357H5a1.87 1.87 0 0 1-1.326-.55 1.87 1.87 0 0 1-.549-1.325V5c0-.518.21-.987.55-1.326.338-.34.807-.549 1.325-.549h6.667Z"
+            />
+          </g>
+        </svg>,
+        "keyTest": [Function],
+        "label": "labels.duplicateSelectionToRight",
+        "name": "duplicateSelectionToRight",
+        "perform": [Function],
+        "trackEvent": {
+          "category": "element",
+        },
+      },
+      {
         "icon": [Function],
         "keyTest": [Function],
         "label": [Function],
@@ -6723,6 +7085,38 @@ exports[`contextMenu element > shows 'Ungroup selection' in context menu for gro
         "keyTest": [Function],
         "label": "labels.duplicateSelection",
         "name": "duplicateSelection",
+        "perform": [Function],
+        "trackEvent": {
+          "category": "element",
+        },
+      },
+      {
+        "icon": <svg
+          aria-hidden="true"
+          className=""
+          fill="none"
+          focusable="false"
+          role="img"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          viewBox="0 0 20 20"
+        >
+          <g
+            strokeWidth="1.25"
+          >
+            <path
+              d="M14.375 6.458H8.958a2.5 2.5 0 0 0-2.5 2.5v5.417a2.5 2.5 0 0 0 2.5 2.5h5.417a2.5 2.5 0 0 0 2.5-2.5V8.958a2.5 2.5 0 0 0-2.5-2.5Z"
+            />
+            <path
+              clipRule="evenodd"
+              d="M11.667 3.125c.517 0 .986.21 1.325.55.34.338.55.807.55 1.325v1.458H8.333c-.485 0-.927.185-1.26.487-.343.312-.57.75-.609 1.24l-.005 5.357H5a1.87 1.87 0 0 1-1.326-.55 1.87 1.87 0 0 1-.549-1.325V5c0-.518.21-.987.55-1.326.338-.34.807-.549 1.325-.549h6.667Z"
+            />
+          </g>
+        </svg>,
+        "keyTest": [Function],
+        "label": "labels.duplicateSelectionToRight",
+        "name": "duplicateSelectionToRight",
         "perform": [Function],
         "trackEvent": {
           "category": "element",
@@ -8688,6 +9082,38 @@ exports[`contextMenu element > shows context menu for element > [end of test] ap
         },
       },
       {
+        "icon": <svg
+          aria-hidden="true"
+          className=""
+          fill="none"
+          focusable="false"
+          role="img"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          viewBox="0 0 20 20"
+        >
+          <g
+            strokeWidth="1.25"
+          >
+            <path
+              d="M14.375 6.458H8.958a2.5 2.5 0 0 0-2.5 2.5v5.417a2.5 2.5 0 0 0 2.5 2.5h5.417a2.5 2.5 0 0 0 2.5-2.5V8.958a2.5 2.5 0 0 0-2.5-2.5Z"
+            />
+            <path
+              clipRule="evenodd"
+              d="M11.667 3.125c.517 0 .986.21 1.325.55.34.338.55.807.55 1.325v1.458H8.333c-.485 0-.927.185-1.26.487-.343.312-.57.75-.609 1.24l-.005 5.357H5a1.87 1.87 0 0 1-1.326-.55 1.87 1.87 0 0 1-.549-1.325V5c0-.518.21-.987.55-1.326.338-.34.807-.549 1.325-.549h6.667Z"
+            />
+          </g>
+        </svg>,
+        "keyTest": [Function],
+        "label": "labels.duplicateSelectionToRight",
+        "name": "duplicateSelectionToRight",
+        "perform": [Function],
+        "trackEvent": {
+          "category": "element",
+        },
+      },
+      {
         "icon": [Function],
         "keyTest": [Function],
         "label": [Function],
@@ -9674,6 +10100,38 @@ exports[`contextMenu element > shows context menu for element > [end of test] ap
         "keyTest": [Function],
         "label": "labels.duplicateSelection",
         "name": "duplicateSelection",
+        "perform": [Function],
+        "trackEvent": {
+          "category": "element",
+        },
+      },
+      {
+        "icon": <svg
+          aria-hidden="true"
+          className=""
+          fill="none"
+          focusable="false"
+          role="img"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          viewBox="0 0 20 20"
+        >
+          <g
+            strokeWidth="1.25"
+          >
+            <path
+              d="M14.375 6.458H8.958a2.5 2.5 0 0 0-2.5 2.5v5.417a2.5 2.5 0 0 0 2.5 2.5h5.417a2.5 2.5 0 0 0 2.5-2.5V8.958a2.5 2.5 0 0 0-2.5-2.5Z"
+            />
+            <path
+              clipRule="evenodd"
+              d="M11.667 3.125c.517 0 .986.21 1.325.55.34.338.55.807.55 1.325v1.458H8.333c-.485 0-.927.185-1.26.487-.343.312-.57.75-.609 1.24l-.005 5.357H5a1.87 1.87 0 0 1-1.326-.55 1.87 1.87 0 0 1-.549-1.325V5c0-.518.21-.987.55-1.326.338-.34.807-.549 1.325-.549h6.667Z"
+            />
+          </g>
+        </svg>,
+        "keyTest": [Function],
+        "label": "labels.duplicateSelectionToRight",
+        "name": "duplicateSelectionToRight",
         "perform": [Function],
         "trackEvent": {
           "category": "element",

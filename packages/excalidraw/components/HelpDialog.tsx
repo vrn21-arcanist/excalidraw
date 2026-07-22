@@ -457,6 +457,10 @@ export const HelpDialog = ({ onClose }: { onClose?: () => void }) => {
               ]}
             />
             <Shortcut
+              label={t("labels.duplicateSelectionToRight")}
+              shortcuts={[getShortcutKey("Alt+D")]}
+            />
+            <Shortcut
               label={t("helpDialog.toggleElementLock")}
               shortcuts={[getShortcutKey("CtrlOrCmd+Shift+L")]}
             />
